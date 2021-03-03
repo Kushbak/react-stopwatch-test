@@ -5,7 +5,7 @@ const Checkpoints = (props) => {
         <div className='checkpoints'>
             {
                 props.checkpoints.map((item, index) => (
-                    <div className="checkpoint">
+                    <div className="checkpoint" key={index}>
                         <p>{index}</p>
                         <p>{beautifyDate(item)}</p>
                     </div>
