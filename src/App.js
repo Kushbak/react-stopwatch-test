@@ -35,8 +35,8 @@ function App() {
           if (!isPlay) return
 
           const intervalId = setInterval(() => {
-            setTime((timestamp) => timestamp + 100)
-          }, 100)
+            setTime((timestamp) => timestamp + 10)
+          }, 10)
           
           return () => {
             clearInterval(intervalId);
