@@ -19,9 +19,11 @@ function App() {
     }
 
     const setCheckpoint = () => {
-        let checkpointsArr = checkpoints
-        checkpoints.push(time)
-        setCheckpoints(checkpointsArr)
+        if(time > 0)  {
+            let checkpointsArr = [...checkpoints]
+            checkpointsArr.push(time)
+            setCheckpoints(checkpointsArr)
+        }
     }
 
     const resetStopwatch = () => {
